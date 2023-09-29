@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chessaria</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="function.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="characterUI.css">
+    </head>
+    <body>
+        <div class="turn-text">white</div>
+        <button class="leave" onclick='window.open("index.html", "_self")'>Leave</button>
+        <button class="ready-up" onclick="FinishBuilding()" id="false">Ready (0/0)</button>
+        <div class="table-outer"></div>
+        <div class="character-menu">
+            <div class="mana-text">0/100</div>
+            <button class="character delete">Delete 🗑️</button>
+        </div>
+        <div class="attack-menu"></div>
+    </body>
+</html>
